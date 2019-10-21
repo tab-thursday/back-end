@@ -88,8 +88,9 @@ url: https://tabless-be.herokuapp.com/
 #### POST: `\api\tabs\{user_id}`
 
     adds a tab for the user with the provided id, and returns a list of all users tabs
-    
-    ```
+
+
+```
     REQEUEST BODY EXAMPLE
 
     {
@@ -99,6 +100,8 @@ url: https://tabless-be.herokuapp.com/
         "category_id": 1 //DEFAULTS TO 1, OPTINLA
     }
 ```
+
+
 
 ```
     RESPONSE BODY EXAMPLE
