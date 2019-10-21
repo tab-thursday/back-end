@@ -1,6 +1,6 @@
 # back-end
 
-url: https://tabless-be.herokuapp.com/api
+url: https://tabless-be.herokuapp.com/
 
 ## End Points:
 
@@ -63,3 +63,24 @@ url: https://tabless-be.herokuapp.com/api
 #### GET: `\api\tabs\{user_id}`
 
     retrieves all tabs for the user with the provided id
+
+
+```json
+    
+    RESPONSE BODY EXAMPLE
+
+    {
+    "tabs": 
+        [
+            {
+            "id": 1,
+            "url": "https://google.com/",
+            "name": "google search",
+            "notes": "find stuff",
+            "user_id": 1,
+            "category_id": 1,
+            "category": "misc"
+            }
+        ]
+    }
+```
