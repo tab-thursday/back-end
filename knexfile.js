@@ -5,7 +5,6 @@ module.exports = {
     useNullAsDefault: true,
     migrations: {
       directory: './database/migrations',
-      tableName: 'dbmigrations',
     },
     seeds: { directory: './database/seeds' },
     pool: {
@@ -40,8 +39,7 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations',
-      directory: 'migrations'
+      directory: './database/migrations'
     },
     timezone: 'UTC'
   }
