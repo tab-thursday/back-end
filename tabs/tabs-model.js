@@ -7,7 +7,7 @@ module.exports.getUserTabs = id => db('tabs as t')
     .where({ user_id: id })
     .join('categories as c', { 'c.id': 't.category_id' })
 
-module.exports.addTab = tab => db('tabs').insert(tab)
+module.exports.addTab = tab => db('tabs').insert(tab, 'id')
     .then(() => module.exports.getUserTabs(tab.user_id))
 
 module.exports.updateTab = (tab, id) => db('tabs').update(tab).where({id})

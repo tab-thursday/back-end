@@ -6,10 +6,12 @@ router.use("/:id", confirmUser)
 router.get("/:id", (req, res) => {
     tabsModel.getUserTabs(req.params.id)
         .then(tabs => {
+            console.log(tabs)
             res.json({tabs})
         })
         .catch(err => {
             res.status(500).json({error: "error occured retrieving user tabs"})
+            console.log(err)
         })
 })
 

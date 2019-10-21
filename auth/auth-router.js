@@ -12,7 +12,7 @@ router.post('/register', verifyUser, (req, res) => {
       res.send({ id, token })
     })
     .catch(err => {
-      res.send(500).json({error: "error creating user"})
+      res.status(500).json({error: "error creating user"})
     })
 });
 
