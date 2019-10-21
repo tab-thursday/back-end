@@ -121,3 +121,10 @@ url: https://tabless-be.herokuapp.com/
         ]
     }
 ```
+#### PUT: `\api\tabs\{user_id}\{tab_id}`
+
+    Updates the tab with the provided tab_id, and returns a list of user tabs. Only need to include the fields you want to be updated to be updated
+    
+#### DELETE: `\api\tabs\{user_id}\{tab_id}`
+
+    Delete the tab with the provided tab_id, and returns a list of user tabs.
