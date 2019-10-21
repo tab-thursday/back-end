@@ -11,7 +11,7 @@ url: https://tabless-be.herokuapp.com/
     Register new user and returns id and token
 
 
-```json
+```
     
     REQUEST BODY EXAMPLE
 
@@ -21,7 +21,7 @@ url: https://tabless-be.herokuapp.com/
     }
 ```
 
-```json
+```
     
     RESPONSE BODY EXAMPLE
 
@@ -36,7 +36,7 @@ url: https://tabless-be.herokuapp.com/
     Logs in existing user and returns id and token
 
 
-```json
+```
     
     REQUEST BODY EXAMPLE
 
@@ -46,7 +46,7 @@ url: https://tabless-be.herokuapp.com/
     }
 ```
 
-```json
+```
     
     RESPONSE BODY EXAMPLE
 
@@ -65,7 +65,7 @@ url: https://tabless-be.herokuapp.com/
     retrieves all tabs for the user with the provided id
 
 
-```json
+```
     
     RESPONSE BODY EXAMPLE
 
