@@ -97,7 +97,7 @@ url: https://tabless-be.herokuapp.com/
         "url": "https://google.com/", //REQUIRED
         "name": "google search", //OPTINAL
         "notes": "find stuff", //OPTINAL
-        "category_id": 1 //DEFAULTS TO 1, OPTINLA
+        "category_id": 1 //DEFAULTS TO 1, OPTIONAL
     }
 ```
 
