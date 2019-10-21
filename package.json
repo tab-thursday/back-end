@@ -15,11 +15,11 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.19.2",
     "pg": "^7.12.1",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "sqlite3": "^4.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1",
-    "sqlite3": "^4.1.0"
+    "nodemon": "^1.19.1"
   },
   "name": "tabless-thursday",
   "version": "1.0.0",
