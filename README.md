@@ -84,3 +84,47 @@ url: https://tabless-be.herokuapp.com/
         ]
     }
 ```
+
+#### POST: `\api\tabs\{user_id}`
+
+    adds a tab for the user with the provided id, and returns a list of all users tabs
+
+
+```
+    REQEUEST BODY EXAMPLE
+
+    {
+        "url": "https://google.com/", //REQUIRED
+        "name": "google search", //OPTINAL
+        "notes": "find stuff", //OPTINAL
+        "category_id": 1 //DEFAULTS TO 1, OPTIONAL
+    }
+```
+
+
+
+```
+    RESPONSE BODY EXAMPLE
+
+    {
+    "tabs": 
+        [
+            {
+                "id": 1,
+                "url": "https://google.com/",
+                "name": "google search",
+                "notes": "find stuff",
+                "user_id": 1,
+                "category_id": 1,
+                "category": "misc"
+            }
+        ]
+    }
+```
+#### PUT: `\api\tabs\{user_id}\{tab_id}`
+
+    Updates the tab with the provided tab_id, and returns a list of user tabs. Only need to include the fields you want to be updated to be updated
+    
+#### DELETE: `\api\tabs\{user_id}\{tab_id}`
+
+    Delete the tab with the provided tab_id, and returns a list of user tabs.
