@@ -1,6 +1,10 @@
 const router = require('express').Router();
 const tabsModel = require('./tabs-model')
-
+router.get("/categories", (req, res) => {
+    tabsModel.cats()
+        .then(cats => res.json(cats))
+        .catch(() => res.status(500).json({error: "error occured retrieving category list"}))
+})
 router.use("/:id", confirmUser)
 
 router.get("/:id", (req, res) => {
@@ -38,6 +42,7 @@ router.delete("/:id/:tab_id", (req, res) => {
             res.status(500).json({error: "error occured deleting user tabs"})
         })
 })
+
 
 
 function confirmUser(req, res, next) {

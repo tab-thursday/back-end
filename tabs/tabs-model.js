@@ -15,3 +15,5 @@ module.exports.updateTab = (tab, id) => db('tabs').update(tab).where({id})
 
 module.exports.deleteTab = (user_id, id) => db('tabs').delete().where({id})
     .then(() => module.exports.getUserTabs(user_id)) 
+
+module.exports.cats = () => db('categories')
